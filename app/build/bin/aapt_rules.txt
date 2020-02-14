@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:49
+-keep class com.myasciiphoto.image.gjl.MainActivity { <init>(...); }
+
+# view res/layout/main.xml #generated:137
+-keep class com.myasciiphoto.image.gjl.nzoom { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.myasciiphoto.image.gjl.two { <init>(...); }
+
+# onClick res/layout/main.xml #generated:15
+-keepclassmembers class * { *** chose(...); }
+
+# onClick res/layout/main.xml #generated:33
+-keepclassmembers class * { *** doPick(...); }
+
+# onClick res/layout/main.xml #generated:63
+-keepclassmembers class * { *** doPick2(...); }
+
+# onClick res/layout/main.xml #generated:48
+-keepclassmembers class * { *** save(...); }
+
+# onClick res/layout/main.xml #generated:78
+-keepclassmembers class * { *** ttt(...); }
+
+# onClick res/layout/main.xml #generated:93
+-keepclassmembers class * { *** vio(...); }
+

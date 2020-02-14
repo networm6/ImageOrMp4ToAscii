@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.kz.Base;
 import android.kz.Toastkeeper;
 import android.app.AlertDialog;
+import android.graphics.BitmapFactory;
 public class MainActivity extends Base 
 {
 	
@@ -173,8 +174,9 @@ public class MainActivity extends Base
 			public void run() 		
 			{ 			filepath = CommonUtil.amendRotatePhoto(in, MainActivity.this);
 				String iit=te.getText().toString();
-				bitmap = CommonUtil.createAsciiPicColor(iit,filepath, MainActivity.this);
-				runOnUiThread(new Runnable() {
+				//bitmap = CommonUtil.createAsciiPicColor(iit,filepath, MainActivity.this);
+				bitmap=Utils.getTextBitmap(BitmapFactory.decodeFile(filepath),iit,19);
+                runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
 							imageView.setImageBitmap(bitmap);
